@@ -1,3 +1,62 @@
-@import url("Basic.css");
-@import url("Common.css");
-@import url("Queries.css");
+/*Global Styles*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --mainColor:#F1F1F1;
+    --secondColor: #BAE71A;
+}
+
+.text-main{
+    color: var(--mainColor);
+}
+.text-special{
+    color: var(--secondColor);
+}
+.bg-special{
+    background-color: var(--secondColor);
+}
+
+.height-100{
+    height:100%
+}
+
+/* main{
+    background-color: aquamarine;
+} */
+
+/*Home Section Start*/
+#home{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.9)),url("../images/01_home_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#home .container{
+    flex-direction: column;
+    /* background-color: aliceblue; */
+}
+#home .container .home-content .home-btns .watch-now {
+    color: var(--secondColor);
+    border: 2px solid var(--secondColor);
+}
+#home .container .home-content .home-btns .watch-now:hover{
+    background-color: var(--secondColor);
+    color: black;
+
+}
+#home .container .home-img {
+   background-image: url("../images/02_PC_Gaming.png");
+   height: 300px;
+   background-position: center center;
+   background-size: cover;
+   border: 3px solid #BAE71A;
+}
+
+/* .home-content,.home-img{
+    background-color: #BAE71A;
+} */
+/*Home Section End*/
